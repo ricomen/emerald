@@ -4,4 +4,28 @@
   outline: none;
   display: inline-block;
   vertical-align: middle;
+  box-sizing: border-box;
+  transition: opacity 0.25s;
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+  &--inst {
+    position: relative;    
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: @green;
+    padding-left: 45px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -5px;
+      content: "";
+      width: 35px;
+      height: 35px;
+      background-image: url("../img/svg/instagram-icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }

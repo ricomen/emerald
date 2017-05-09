@@ -1,0 +1,49 @@
+.services {
+  padding-top: 65px;
+  padding-bottom: 90px;
+  background-image: url("../img/wave-bg-top.png"),
+                    url("../img/wave-bg-bottom.png"),
+                    url("../img/services-bg.jpg");
+  background-repeat: repeat-x, repeat-x,no-repeat;
+  background-position: center top,
+                       center bottom,
+                       center;
+  background-size: auto, auto, cover;
+  &__title {
+    margin-bottom: 30px;
+    font-size: 42px;
+    text-align: center;
+    color: #fff;
+  }//title
+
+  &__row {
+    margin-bottom: 30px;
+  }
+
+
+  &__item {
+    color: #fff;
+    &-img {
+      width: 165px;
+      height: 165px;
+      border-radius: 50%;   
+      overflow: hidden;   
+    }
+    &-img,
+    &-content {
+      // display: inline-block;
+      // vertical-align: middle;
+    }
+    // &-content {      
+    //   width: 50%;
+    // }
+    h3 {
+      font-family: @PTSans;
+      font-size: 24px;
+    }
+    p {
+      margin: 0;
+    }
+  }//item
+
+}

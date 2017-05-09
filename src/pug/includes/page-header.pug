@@ -1,1 +1,37 @@
 header.page-header
+  .page-header
+    .container.page-header--flex
+      nav.main-nav
+        button.main-nav__toggle 
+          span Меню
+        ul.main-nav__list
+          li.main-nav__item
+            a(href="#") Главная
+          li.main-nav__item
+            a(href="#") Услуги
+          li.main-nav__item
+            a(href="#") Портфолио
+          li.main-nav__item
+            a(href="#") Стоимость
+          li.main-nav__item
+            a(href="#") Наша команда
+          li.main-nav__item
+            a(href="#") Площадка-партнер
+          li.main-nav__item
+            a(href="#") Отзывы
+          li.main-nav__item
+            a(href="#") Не свадебные проекты
+          li.main-nav__item
+            a(href="#") Контакты
+      .page-header__description
+        h2 Группа компаний Emerald
+        p Организация свадебных торжеств
+      a.logo.logo--header(href="/")
+        img(src="img/logo.png", srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" width="140" alt="Emerald")
+      .page-header__phones
+        +icon("phone", 20)
+        .page-header__phones-wrap
+          a(href="tel:+74951955722") +7 (495) 195-57-22
+          a(href="tel:+79853941057") +7 (495) 394-10-57
+      .page-header__callback
+        button.btn Заказать звонок

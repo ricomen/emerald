@@ -1,0 +1,46 @@
+.banner {
+  background-image: url("../img/wave-bg-bottom.png"),
+                    url("../img/banner-bg.jpg");
+  background-repeat: repeat-x, no-repeat;
+  background-position: center bottom,
+                       top center;
+  background-size: auto, cover;
+  height: 690px;
+  @media @tablet {
+    height: 490px;
+  }
+  @media @phone {
+    height: 290px;
+  }
+  .container {
+    height: 100%;
+  }
+  &__content {
+    display: table;
+    height: 100%;
+    padding-bottom: 50px;
+    @media @phone {
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    font-weight: normal;
+    @media @tablet {
+      font-size: 32px;
+    }
+    @media @phone {
+      vertical-align: middle;
+      font-size: 30px;
+    }
+    @media @small {
+      font-size: 24px;
+    }
+  }
+
+}

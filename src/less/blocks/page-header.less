@@ -1,3 +1,21 @@
-.page-header {
-  
+.page-header {      
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background: linear-gradient(to right, @green 20%, #33917b 50%, #33917b 50%, @green 80%);
+  box-sizing: border-box;
+  &__phones {
+    &-wrap {
+      display: inline-block;
+      vertical-align: middle;
+      a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    svg.icon-phone {
+     display: inline-block;
+     vertical-align: middle;
+    }
+  }
 }

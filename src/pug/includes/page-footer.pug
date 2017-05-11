@@ -1,19 +1,24 @@
 footer.page-footer
   .container
-    .page-footer__col
+    .page-footer__row
+      .page-footer__col
+        .logo(href="/")
+          img(src="img/logo.png", srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" width="100" alt="Emerald")
+        h2 Группа компаний Emerald
+        p Организация свадебных торжеств
+      .page-footer__col
+      .page-footer__col
+        .social
+          a(href="www.vk.com" title="Vkontakte").social__btn
+            +icon("vk", 50)
+          a(href="www.instagram.com" title="Instagram").social__btn
+            +icon("inst", 50)
+          a(href="www.facebook.com" title="Facebook").social__btn
+            +icon("fb", 50)
+          a(href="www.whatsapp.com" title="Whatsapp").social__btn
+            +icon("whatsapp", 50)
+          a(href="www.youtube.com" title="Youtube").social__btn
+            +icon("youtube", 50)
 
-    .page-footer__col
-
-    .page-footer__col
-      .social
-        a(href="www.vk.com" title="Vkontakte").social__btn
-          +icon("vk", 50)
-        a(href="www.instagram.com" title="Instagram").social__btn
-          +icon("inst", 50)
-        a(href="www.facebook.com" title="Facebook").social__btn
-          +icon("fb", 50)
-        a(href="www.whatsapp.com" title="Whatsapp").social__btn
-          +icon("whatsapp", 50)
-        a(href="www.youtube.com" title="Youtube").social__btn
-          +icon("youtube", 50)
-        .test
+    .page-footer__copyright &copy; 2017 Все права защищены&nbsp;
+      a(href="#") Политика конфиденциальности

@@ -1,6 +1,6 @@
 .services {
-  padding-top: 65px;
-  padding-bottom: 90px;
+  padding-top: 5.55%;
+  padding-bottom: 7.55%;
   background-image: url("../img/wave-bg-top.png"),
                     url("../img/wave-bg-bottom.png"),
                     url("../img/services-bg.jpg");
@@ -9,6 +9,7 @@
                        center bottom,
                        center;
   background-size: auto, auto, cover;
+
   &__title {
     margin-bottom: 30px;
     font-size: 42px;
@@ -17,33 +18,70 @@
   }//title
 
   &__row {
-    margin-bottom: 30px;
+    font-size: 0;
+    margin-bottom: 3.41%;
+    &:last-child {
+    margin-bottom: 0;
+    .services__item:last-child {
+      margin-bottom: 0;
+    }
+    }
+    &--short {
+      padding: 0 9.65%;
+    }
+    @media @tablet {
+      margin-bottom: 0;
+      padding: 0;
+    }
   }
 
-
   &__item {
-    color: #fff;
-    &-img {
-      width: 165px;
-      height: 165px;
-      border-radius: 50%;   
-      overflow: hidden;   
+    position: relative;
+    padding-left: 180px;
+    min-height: 165px;
+    display: inline-block;
+    vertical-align: top;
+    &--wide {
+      width: 49.6%;
     }
-    &-img,
-    &-content {
-      // display: inline-block;
-      // vertical-align: middle;
+    &--narrow {
+      width: 33.3333%;
     }
-    // &-content {      
-    //   width: 50%;
-    // }
-    h3 {
-      font-family: @PTSans;
-      font-size: 24px;
+    @media @tablet {
+      padding-left: 135px;
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      min-height: 120px;
     }
-    p {
-      margin: 0;
-    }
-  }//item
 
+  }
+
+  &__img {  
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;   
+    overflow: hidden;
+    transition: 0.5s;
+    @media @tablet {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  &__descr {
+    color: #fff;
+    p {
+      font-size: 18px;
+      margin: 0;
+    }    
+  } 
+  &__subtitle {
+    margin-bottom: 10px;
+    font-family: @PTSans;
+    font-size: 24px;    
+  }
 }

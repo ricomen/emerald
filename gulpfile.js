@@ -23,7 +23,7 @@ const sourcemaps     = require('gulp-sourcemaps');
 const gulpIf         = require('gulp-if');
 const cssgrace       = require('cssgrace')
 const mqpacker       = require("css-mqpacker");
-
+const smartgrid      = require("smart-grid");
 // const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 
 
@@ -178,12 +178,12 @@ gulp.task('smartgrid', function () {
     outputStyle: 'less',
         columns: 12,
             tab: "  ",
-         offset: "30px", 
-      container: {maxWidth: '1200px', fields: '30px'},
+         offset: "15px", 
+      container: {maxWidth: '1170px', fields: '15px'},
     breakPoints: {
            lg: {
-               'width': '1100px', /* -> @media (max-width: 1100px) */
-               'fields': '30px' /* side fields */
+               'width': '1200px', /* -> @media (max-width: 1100px) */
+               'fields': '15px' /* side fields */
            },
            md: {
                'width': '960px',

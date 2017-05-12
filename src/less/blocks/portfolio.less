@@ -1,3 +1,90 @@
 .portfolio {
-  background-image: url("../img/portfolio-bg.jpg");
+  padding: 5.5% 0;
+  background-image: url("../img/portfolio-pattern-top.png"),
+                    url("../img/portfolio-pattern-bottom.png"),
+                    url("../img/portfolio-bg.jpg");
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-position: center top, center bottom, center;
+  background-size: auto, auto, cover;
+
+  &__title {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 52px;
+    font-weight: normal;
+    color: @green;
+  }//title 
+
+  &__box {    
+    max-width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    .clearfix;
+    margin-bottom: 20px;
+  }//box
+
+  &__item {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 230px;
+    background-size: cover;
+    background-position: center top;    
+    &:hover &-descr {
+      display: block;
+      animation-name: zoomIn;
+      animation-duration: 0.5s;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      right: 10px;
+      bottom: 10px;
+      width: 23px;
+      height: 23px;
+      border: 1px solid #fff;
+      background: @green;
+      border-radius: 50%;
+      background-image: data-uri("../img/svg/search.svg");
+      background-repeat: no-repeat;
+      background-size: 15px;
+      background-position: center;
+    }//after
+    @media @tablet {
+      width: 50%;
+    }
+    @media @small {
+      width: 100%;
+    }
+    &--2xWeight {
+      float: right;
+      height: 460px;
+    }
+    &--wide {
+      width: 40%;      
+      @media @tablet {
+        width: 50%;
+      }
+    }
+    &-descr {
+      position: absolute;
+      display: none;
+      padding: 12.5px 45px 12.5px 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: right;
+      background: @green;
+      span {
+        color: #fff;
+        font-size: 18px;
+      }
+    }//descr
+  }//item
+  &__follow {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+    color: @green;    
+  }
 }

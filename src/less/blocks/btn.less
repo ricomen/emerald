@@ -6,6 +6,7 @@
   vertical-align: middle;
   box-sizing: border-box;
   transition: opacity 0.25s;
+  text-decoration: none;
   &:hover,
   &:active {
     opacity: 0.8;
@@ -17,6 +18,7 @@
     font-weight: bold;
     color: @green;
     padding-left: 45px;
+    text-decoration: none;
     &::before {
       position: absolute;
       left: 0;
@@ -28,4 +30,23 @@
       background-repeat: no-repeat;
     }
   }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--small {
+    color: #fff;
+    background: @green;
+    border-radius: 15px
+  }
+  &--big {
+    color: #fff;
+    padding: 9px 28px 11px;
+    background: @green;
+    font-size: 24px;
+    line-height: 1.1;
+    border-radius: 25px;
+    border: 2px solid #fff;
+  }
+
 }

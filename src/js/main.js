@@ -2,13 +2,45 @@
 (function() {
   var mainNavToggle = document.querySelector(".main-nav__toggle");
   var mainNav       = document.querySelector(".main-nav__list");
-  // console.log(mainNav);
-
+  
+  //навигация
   mainNavToggle.addEventListener("click", function() {
 
     mainNav.classList.toggle("main-nav__list--show");
 
   });
+  var priceItem = document.querySelectorAll(".price__item");
+
+  function autoHeight(collection) {
+    var maxHeight = 0;
+    var maxCol = [];
+    for (var i = 0; i < collection.length; i++) {
+      if (maxHeight > getComputedStyle(collection[i]).height) {
+        continue;
+        } else {
+         maxHeight = getComputedStyle(collection[i]).height;
+         maxCol = collection[i];
+        };
+      }
+
+     for (var i = 0; i < collection.length; i++) {
+      // console.log(maxHeight);     
+      console.log(maxCol.offsetHeight);
+      if(collection[i].height < maxCol.offsetHeight) {
+        console.log(collection[i]);
+      };
+      // collection[i].style.minHeight = maxHeight;
+     }
+
+  };
+    autoHeight(priceItem);
+
+  window.onresize = function() {
+    autoHeight(priceItem);
+    
+  }
+
+
 
 })();
 

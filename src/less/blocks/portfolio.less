@@ -1,16 +1,21 @@
 .portfolio {
-  padding: 5.5% 0;
+  padding: 50px 0;
   background-image: url("../img/portfolio-pattern-top.png"),
                     url("../img/portfolio-pattern-bottom.png"),
                     url("../img/portfolio-bg.jpg");
   background-repeat: repeat-x, repeat-x, no-repeat;
   background-position: center top, center bottom, center;
   background-size: auto, auto, cover;
-
+  @media @tablet {
+    padding: 40px 0;
+  }
+  @media @phone {
+    padding: 20px 0;
+  }
   &__title {
     margin-bottom: 25px;
     text-align: center;
-    font-size: 52px;
+    font-size: 42px;
     font-weight: normal;
     color: @green;
   }//title 
@@ -20,7 +25,7 @@
     margin-left: auto;
     margin-right: auto;
     .clearfix;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }//box
 
   &__item {

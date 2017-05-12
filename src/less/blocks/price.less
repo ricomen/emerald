@@ -1,6 +1,6 @@
 .price {
-  padding-top: 7%;
-  padding-bottom: 4.5%;
+  padding-top: 140px;
+  padding-bottom: 80px;
   background-image: url("../img/wave-grey-bottom.png"),
                     url("../img/wave-green-bottom.png"),
                     url("../img/prcies-bg.jpg");
@@ -8,6 +8,19 @@
   background-position: center top, center bottom, center;
   text-align: center;
   background-size: auto, auto, cover;
+  @media @tablet {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  @media @phone {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  @media @small {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+  }
   &__row {
     font-size: 0;
     margin-left: -15px;

@@ -1,6 +1,6 @@
 .services {
-  padding-top: 5.55%;
-  padding-bottom: 7.55%;
+  padding-top: 60px;
+  padding-bottom: 100px;
   background-image: url("../img/wave-bg-top.png"),
                     url("../img/wave-grey-top.png"),
                     url("../img/services-bg.jpg");
@@ -9,7 +9,12 @@
                        center bottom,
                        center;
   background-size: auto, auto, cover;
-
+  @media @tablet {
+    padding: 40px 0 80px;
+  }
+  @media @phone {
+    padding: 40px 0 60px;
+  }
   &__title {
     margin-bottom: 30px;
     font-size: 42px;

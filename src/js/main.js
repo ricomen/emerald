@@ -37,11 +37,7 @@
 
   window.onresize = function() {
     autoHeight(priceItem);
-    
   }
-
-
-
 })();
 
   function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
@@ -88,3 +84,20 @@
         }
     }
 });
+
+  $(window).load(function(){
+    $(".feedback__row").slick({
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      dots: true,
+      responsive: [    
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+    });
+  });

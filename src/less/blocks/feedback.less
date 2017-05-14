@@ -1,0 +1,88 @@
+.feedback {
+  background: @green;
+  background-image: url("../img/wave-grey-bottom.png"),
+                    url("../img/wave-bg-bottom.png"),
+                    url("../img/feedback-bg.jpg");
+  background-position: left top, left bottom, center;
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-size: auto, auto, cover;  
+  color: #fff;
+  padding: 75px 0 130px;
+
+  &__title {
+    font-size: 42px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    font-size: 0; 
+    max-width: 945px;
+    .center;
+    
+  }
+
+  &__row {    
+    margin: 0 -15px;
+  }
+
+  &__col {
+    display: inline-block;
+    vertical-align: top;
+    width: 47.65% ;
+    margin: 0 15px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    padding: 20px;
+    min-height: 300px;
+    font-size: 16px;
+    color: @green;
+    background: #fff url("../img/feedback-item-bg.jpg") no-repeat right bottom;
+    border-radius: 15px;
+    .clearfix;   
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media @phone {
+      width: 80%;
+      .center;
+    }
+    @media @small {
+      width: 100%;
+    }
+  }
+
+  &__author {
+    float: left;
+    width: 35%;
+    text-align: center;    
+    
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    max-width: 140px;    
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__text {
+    margin: 0;
+    float: right;
+    font-size: 15px;
+    width: 63%;    
+  }
+
+}

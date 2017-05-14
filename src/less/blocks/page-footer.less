@@ -1,75 +1,114 @@
 .page-footer {
   padding: 22px 0 26px;
   background-color: #000;
-  color: #898989;      
-  &__row {
-    font-size: 0;
-    margin-bottom: 26px;
-  }
-
-  &__col {
-    font-size: 18px;
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid #fff;
-    width: 33.3333%;
-  }
-
-  &__logo,
-  &__social {
-    display: inline-block;
-    vertical-align: middle;
-    width: 38.09%;
-    font-size: 16px;    
-    img {
-      float: left;
-      margin-right: 20px;
-    }
-    p {
-      margin: 0;
-    }
-  }
-  &__social {
-    text-align: right;
-    svg {
-      width: 50px;
-      height: 50px;
-    }
-
-  }
+  color: #898989;
 
   &__content {
+    .center;    
     max-width: 945px;
-    padding: 0 10px;
+    text-align: justify;
     font-size: 0;
-    .center;
+    margin-bottom: 50px;
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 100%;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+    }
+    @media @phone {
+      margin-bottom: 20px;
+    }
   }
+
+  &__logo {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    width: 35.9%;
+    .clearfix;
+    @media @phone {
+      display: block;
+      .center;
+      width: 340px;
+      margin-bottom: 20px;
+    }
+    &-img {
+      float: left;
+      width: 29.4%;
+    }
+    &-descr {
+      padding-top: 20px;
+      float: right;
+      width: 63.5%; 
+      b {
+        text-transform: uppercase;
+      } 
+      p {
+        margin: 0;
+      } 
+    }    
+  }
+  
+  &__social {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.063%;
+    font-size: 16px;  
+    @media @phone {
+      display: block;
+      width: 50%;
+      .center;
+    }
+  }
+
 
   &__contacts {
     display: inline-block;
     vertical-align: middle;
     width: 23.8%;    
+    text-align: left;
+    font-size: 16px;
+    @media @phone {
+      .center;
+      display: block;      
+      width: 200px;
+      margin-bottom: 20px;
+    }
   }
   
   &__phone {
     display: block; 
     position: relative;
     padding-left: 27px;
-    color: #fff;
     font-size: 20px;
+    font-weight: bold;
+    color: #fff;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     &:before {
+      font-family: "Fontello";
       position: absolute;
-      content: "";
+      content: "\e801";
       left: 0;
       top: 0;
       width: 16px;
       height: 16px;
-      background: red;
-    }    
+      
+    }
+    &--mobile {
+      &:before {
+        content: "\f10b";
+      }
+    }   
   }
 
 
-  &__copyright {    
+  &__copyright {
     text-align: center;
     font-size: 16px; 
     a {

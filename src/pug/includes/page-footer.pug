@@ -1,14 +1,15 @@
 footer.page-footer  
   .page-footer__content
-    .page-footer__logo        
-      img(src="img/logo.png", srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" width="100" alt="Emerald")
-      p 
+    .page-footer__logo    
+      .page-footer__logo-img    
+        img(src="img/logo.png", srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" width="100" alt="Emerald")
+      .page-footer__logo-descr 
         b Группа компаний Emerald
-      span Организация свадебных торжеств      
+        p Организация свадебных торжеств      
     .page-footer__contacts
        a.page-footer__phone(href="tel:+74951955722") +7 (495) 195-57-22
-       a.page-footer__phone(href="tel:+79161724569") +7 (916) 172-45-69
-       a.page-footer__phone(href="tel:+79853941057") +7 (985) 394-10-57
+       a.page-footer__phone.page-footer__phone--mobile(href="tel:+79161724569") +7 (916) 172-45-69
+       a.page-footer__phone.page-footer__phone--mobile(href="tel:+79853941057") +7 (985) 394-10-57
     .page-footer__social
       a(href="www.vk.com" title="Vkontakte").social__btn
         +icon("vk", 50)

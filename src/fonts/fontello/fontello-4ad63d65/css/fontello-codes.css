@@ -1,0 +1,5 @@
+
+.icon-download:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
+.icon-user:before { content: '\e802'; } /* '' */
+.icon-mobile:before { content: '\f10b'; } /* '' */

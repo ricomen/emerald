@@ -7,6 +7,11 @@
   box-sizing: border-box;
   transition: opacity 0.25s;
   text-decoration: none;
+  color: #fff;
+  padding: 9px 28px 11px;
+  background: @green;
+  border-radius: 25px;
+  border: 2px solid #fff;
   &:hover,
   &:active {
     opacity: 0.8;
@@ -16,20 +21,22 @@
     font-size: 24px;
     text-align: center;
     font-weight: bold;
-    color: @green;
+    padding-top: 10px;
+    // color: @green;
     padding-left: 45px;
     text-decoration: none;
     &::before {
       position: absolute;
-      left: 0;
-      top: -5px;
+      left: 5px;
+      top: 5px;
       content: "";
       width: 35px;
       height: 35px;
       background-image: url("../img/svg/instagram-icon.svg");
       background-repeat: no-repeat;
     }
-  }
+  }//inst
+
   &--uppercase {
     text-transform: uppercase;
   }
@@ -39,14 +46,23 @@
     background: @green;
     border-radius: 15px
   }
-  &--big {
-    color: #fff;
-    padding: 9px 28px 11px;
-    background: @green;
+
+  &--big {    
     font-size: 24px;
-    line-height: 1.1;
-    border-radius: 25px;
-    border: 2px solid #fff;
+    line-height: 1.1;    
+  }
+
+  &--donload {
+    position: relative;
+    padding-left: 40px;
+    font-size: 20px;
+    &:before {
+      font-family: "Fontello";
+      position: absolute;
+      content: "\e800";
+      left: 15px;
+      top: 9px;
+    }
   }
 
 }

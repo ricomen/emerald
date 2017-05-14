@@ -1,7 +1,145 @@
 .team {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: @green;
   background-color: #e5fff7;
-  background-image: url("../img/team-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+  background-image: url("../img/team-line-bg.png"),
+                    url("../img/team-pattern-top.png"),
+                    url("../img/team-pattern-bottom.png"),
+                    url("../img/team-bg.jpg"),;
+  background-repeat: no-repeat,
+                     repeat-x,
+                     repeat-x,
+                     no-repeat;
+  background-size: auto,
+                   auto,
+                   auto,
+                   cover;
+  background-position: center top,
+                       center top,
+                       center bottom,
+                       center;
+  text-align: center;  
+
+  @media @phone {
+    background-image: url("../img/team-pattern-top.png"),
+                      url("../img/team-pattern-bottom.png"),
+                      url("../img/team-bg.jpg"),;
+  background-repeat: repeat-x,
+                     repeat-x,
+                     no-repeat;
+  background-size: auto,
+                   auto,
+                   cover;
+  background-position: center top,
+                       center bottom,
+                       center;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 42px;    
+  }//title 
+
+  &__founder {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 260px;
+    max-width: 750px;
+    .center;
+    @media @tablet {
+      padding-left: 200px;
+    }
+    @media @small {
+      padding: 0;
+    }
+    &-content {
+      padding: 0 30px;
+      text-align: left;
+    }
+    blockquote {
+      margin: 0;
+    }
+  }//founder
+
+  &__list {
+    font-size: 0;
+    max-width: 1050px;
+    .center;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;    
+    width: 25%;
+    font-size: 20px;
+    @media @phone {
+      width: 50%;
+    }
+    @media @small {
+      margin-bottom: 30px;
+      width: 90%;
+      display: block;
+      .center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &:nth-child(even) {
+      position: relative;
+      top: 40px;
+      @media @phone {        
+        top: 0;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid @green;
+    border-radius: 50%;
+    width: 161px;
+    height: 161px;
+    overflow: hidden;
+    .center;
+    &--founder {
+      position: absolute;
+      margin: 0;
+      width: 260px;
+      height: 260px;
+      top: 0;
+      left: 0;
+      @media @tablet {
+        width: 200px;
+        height: 200px;
+      }
+      @media @small {        
+        position: static;
+        .center;
+        margin-bottom: 15px;
+      }
+    }
+  }//img
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8px;
+
+    &--founder {
+      font-size: 24px;      
+    }
+  }//name
+
+  &__duties {
+    margin: 0;
+    padding: 0 10px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    &--founder{
+      font-size: 20px;
+    }
+  }
 }

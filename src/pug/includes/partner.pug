@@ -1,10 +1,32 @@
 section.partner
-  +icon("vk", 100)
-  +icon("inst", 100)
-  +icon("fb", 100)
-  +icon("whatsapp", 100)
-  +icon("youtube", 100)  
-  +icon("menu", 100)
-  +icon("phone", 100)
-  +icon("mobile-phone", 100)
-  +icon("search", 100)
+  .container
+    h2.partner__title Наша площадка-партнер –<br>Кафе-шатры «Русская сказка»
+    .partner__gallery
+      .partner__img
+        img(src="img/partner/partner-1.jpg", alt="Партнерская площадка")
+      .partner__img
+        img(src="img/partner/partner-2.jpg", alt="Партнерская площадка")
+      .partner__img
+        img(src="img/partner/partner-3.jpg", alt="Партнерская площадка")
+
+    .partner__feature-list
+      .partner__feature-item.partner__feature-item--first(data-num="1") – Располагается в 
+        b Национальном конном парке «Русь»
+
+      .partner__feature-item.partner__feature-item--second(data-num="2") – Есть возможность размещения на территории: молодоженам в
+        b двухкомнатном люксе,
+        | а остальным гостям мы можем предложить на выбор:
+        b гостиничные номера,  либо коттеджи
+
+      .partner__feature-item.partner__feature-item--third(data-num="3") – На территории комплекса размещены 
+        |
+        b 3 белоснежных арочных шатра площадью 200кв. м
+
+      .partner__feature-item.partner__feature-item--fourth(data-num="4") – Шатры имеют 
+        b удобный заезд
+        | &nbspи&nbsp
+        b собственную парковку
+
+    .partner__more
+      p Подробнее о площадке:
+      a.btn.btn--donload(href="/Prezentatsia_Russkaya_skazka.pdf" download) Презентация PDF

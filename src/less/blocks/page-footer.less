@@ -1,16 +1,76 @@
 .page-footer {
-  padding: 30px 0;
+  padding: 22px 0 26px;
   background-color: #000;
   color: #898989;      
   &__row {
-
+    font-size: 0;
+    margin-bottom: 26px;
   }
 
   &__col {
-    background: red;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #fff;
+    width: 33.3333%;
   }
 
-  &__copyright {
+  &__logo,
+  &__social {
+    display: inline-block;
+    vertical-align: middle;
+    width: 38.09%;
+    font-size: 16px;    
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &__social {
+    text-align: right;
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+
+  }
+
+  &__content {
+    max-width: 945px;
+    padding: 0 10px;
+    font-size: 0;
+    .center;
+  }
+
+  &__contacts {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23.8%;    
+  }
+  
+  &__phone {
+    display: block; 
+    position: relative;
+    padding-left: 27px;
+    color: #fff;
+    font-size: 20px;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: red;
+    }    
+  }
+
+
+  &__copyright {    
+    text-align: center;
     font-size: 16px; 
     a {
       color: inherit;

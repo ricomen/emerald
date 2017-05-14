@@ -1,1 +1,68 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><defs><style>.cls-1{fill:#007558;}.cls-2{fill:#fff;}</style></defs><title>Soc_green</title><path class="cls-1" d="M50,25A25,25,0,1,1,25,0,25,25,0,0,1,50,25h0Z"/><path class="cls-2" d="M29.94,24.68l-8,4.32V20.33l3.61,2,4.39,2.39h0Zm9.57-5.86a6.86,6.86,0,0,0-1.18-3.07,4.15,4.15,0,0,0-3-1.31C31.22,14.14,25,14.14,25,14.14h0s-6.22,0-10.36.31a4.14,4.14,0,0,0-3,1.31,6.87,6.87,0,0,0-1.18,3.07,48.46,48.46,0,0,0-.3,5v2.34a48.5,48.5,0,0,0,.3,5,6.87,6.87,0,0,0,1.18,3.06,4.9,4.9,0,0,0,3.27,1.32C17.3,35.78,25,35.86,25,35.86s6.22,0,10.37-.32a4.14,4.14,0,0,0,3-1.31,6.85,6.85,0,0,0,1.18-3.06,48.41,48.41,0,0,0,.3-5V23.82a48.42,48.42,0,0,0-.3-5h0Z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 50 50"
+   version="1.1"
+   sodipodi:docname="youtube.svg"
+   width="50"
+   height="50"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1737"
+     inkscape:window-height="1080"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="11.125147"
+     inkscape:cx="27.629352"
+     inkscape:cy="20.345596"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#007558;}.cls-2{fill:#fff;}</style>
+  </defs>
+  <title
+     id="title6">Soc_green</title>
+  <path
+     class="cls-1"
+     d="M 50,25 A 25,25 0 1 1 25,0 25,25 0 0 1 50,25 Z"
+     id="path8"
+     inkscape:connector-curvature="0"
+     style="fill:#007558" />
+  <path
+     class="cls-2"
+     d="m 29.94,24.68 -8,4.32 v -8.67 l 3.61,2 4.39,2.39 v 0 z m 9.57,-5.86 a 6.86,6.86 0 0 0 -1.18,-3.07 4.15,4.15 0 0 0 -3,-1.31 C 31.22,14.14 25,14.14 25,14.14 v 0 c 0,0 -6.22,0 -10.36,0.31 a 4.14,4.14 0 0 0 -3,1.31 6.87,6.87 0 0 0 -1.18,3.07 48.46,48.46 0 0 0 -0.3,5 v 2.34 a 48.5,48.5 0 0 0 0.3,5 6.87,6.87 0 0 0 1.18,3.06 4.9,4.9 0 0 0 3.27,1.32 C 17.3,35.78 25,35.86 25,35.86 c 0,0 6.22,0 10.37,-0.32 a 4.14,4.14 0 0 0 3,-1.31 6.85,6.85 0 0 0 1.18,-3.06 48.41,48.41 0 0 0 0.3,-5 v -2.35 a 48.42,48.42 0 0 0 -0.3,-5 v 0 z"
+     id="path10"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff" />
+</svg>

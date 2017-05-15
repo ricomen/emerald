@@ -1,68 +1,87 @@
 .btn {
+  display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   border: none;
   outline: none;
-  display: inline-block;
-  vertical-align: middle;
   box-sizing: border-box;
   transition: opacity 0.25s;
   text-decoration: none;
-  color: #fff;
-  padding: 9px 28px 11px;
-  background: @green;
-  border-radius: 25px;
-  border: 2px solid #fff;
-  &:hover,
-  &:active {
-    opacity: 0.8;
-  }
-  &--inst {
-    position: relative;    
-    font-size: 24px;
+  &--callback {
+    padding: 4.5px 8px;
+    width: 165px;
     text-align: center;
-    font-weight: bold;
-    padding-top: 10px;
-    // color: @green;
-    padding-left: 45px;
-    text-decoration: none;
-    &::before {
-      position: absolute;
-      left: 5px;
-      top: 5px;
-      content: "";
-      width: 35px;
-      height: 35px;
-      background-image: url("../img/svg/instagram-icon.svg");
-      background-repeat: no-repeat;
-    }
-  }//inst
-
-  &--uppercase {
-    text-transform: uppercase;
-  }
-
-  &--small {
-    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    color: #fff;    
+    border-radius: 15px;
     background: @green;
-    border-radius: 15px
   }
-
-  &--big {    
-    font-size: 24px;
-    line-height: 1.1;    
-  }
-
-  &--donload {
-    position: relative;
-    padding-left: 40px;
-    font-size: 20px;
-    &:before {
-      font-family: "Fontello";
-      position: absolute;
-      content: "\e800";
-      left: 15px;
-      top: 9px;
-    }
-  }
-
 }
+
+//   display: inline-block;
+//   vertical-align: middle;
+//   color: #fff;
+//   padding: 9px 28px 11px;
+//   background: @green;
+//   border-radius: 25px;
+//   border: 2px solid #fff;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   box-sizing: border-box;
+//   &:hover,
+//   &:active {
+//     opacity: 0.8;
+//   }
+
+//   &--width
+//   &--inst {
+//     position: relative;    
+//     font-size: 24px;
+//     text-align: center;
+//     font-weight: bold;
+//     padding-top: 10px;
+//     // color: @green;
+//     padding-left: 45px;
+//     text-decoration: none;
+//     &::before {
+//       position: absolute;
+//       left: 5px;
+//       top: 5px;
+//       content: "";
+//       width: 35px;
+//       height: 35px;
+//       background-image: url("../img/svg/instagram-icon.svg");
+//       background-repeat: no-repeat;
+//     }
+//   }//inst
+
+//   &--uppercase {
+//     text-transform: uppercase;
+//   }
+
+//   &--small {
+//     color: #fff;
+//     background: @green;
+//     border-radius: 15px
+//   }
+
+//   &--big {    
+//     font-size: 24px;
+//     line-height: 1.1;    
+//   }
+
+//   &--donload {
+//     position: relative;
+//     padding-left: 40px;
+//     font-size: 20px;
+//     &:before {
+//       font-family: "Fontello";
+//       position: absolute;
+//       content: "\e800";
+//       left: 15px;
+//       top: 9px;
+//     }
+//   }
+// }

@@ -2,20 +2,92 @@
   padding-top: 13px;
   padding-bottom: 13px;
   background: linear-gradient(to right, @green 20%, #33917b 50%, #33917b 50%, @green 80%);
-  box-sizing: border-box;
+
+  &__row {
+   .clearfix;
+  }
+
+  &__left {    
+   float: left;
+   width: 41%;
+   .clearfix;
+   @media @phone {
+    width: 62%;
+   }
+   @media @small {
+    width: 100%;
+   }
+  }//left
+
+  &__right {
+   float: right;
+   width: 41%;
+   .clearfix;
+   @media @phone {
+    width: 38%;
+   }
+   @media @small {
+    display: none;
+   }
+  }//right
+
+  &__description {
+    float: left;
+    color: #fff;
+    width: 55%;
+    font-size: 16px;
+    @media @phone {
+      width: 78%;
+    }
+    @media @small {
+      width: 200px;
+    }
+    p {
+      &:first-child {
+        text-transform: uppercase;
+      }
+      margin: 0;
+    }
+  }//description
+
   &__phones {
+    float: right;
+    margin-right: 5%;
+    @media @tablet {
+      margin-right: 0;
+    }
+
     &-wrap {
-      display: inline-block;
-      vertical-align: middle;
       a {
         display: block;
+        position: relative;
+        padding-left: 20px;
         color: #fff;
+        font-size: 20px;
+        font-weight: bold;
         text-decoration: none;
-      }
+        &:before {
+          font-family: "Fontello";
+          position: absolute;
+          content: "\e801";
+          left: 0;
+          top: 0;
+          width: 16px;
+          height: 16px;    
+        }
+      }     
     }
-    svg.icon-phone {
-     display: inline-block;
-     vertical-align: middle;
+  }//phones
+
+
+  &__callback {
+    float: right;
+    padding-top: 5px;
+    @media @tablet {
+      margin-bottom: 20px;
+    }
+    @media @phone {
+      display: none;
     }
   }
 }

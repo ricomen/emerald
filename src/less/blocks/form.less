@@ -1,4 +1,4 @@
-.form-secrets {
+.form-secrets {  
   background: #fff;
   color: @green;
 
@@ -23,6 +23,9 @@
     margin-bottom: 30px;
     color: @green;
     text-align: center;
+    @media @phone {
+      font-size: 22px;
+    }    
   }//text
 
   input {      
@@ -61,6 +64,11 @@
     }
     &--show {
       display: block;
+    }
+    @media @small {
+      p {
+        font-size: 22px;        
+      }
     }
   }
 }

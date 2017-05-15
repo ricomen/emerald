@@ -1,0 +1,63 @@
+.other {
+  padding-top: 50px;
+  text-align: center;
+    color: @green;
+
+  &__title {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  &__row {
+    .center;
+    margin-bottom: 40px;
+    max-width: 945px;
+    font-size: 0;    
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1.32%;
+    margin-right: 1.32%;
+    font-family: @Kurale;
+    width: 30.68%;
+    font-size: 28px;
+    text-align: center;
+    p {
+      padding: 0 5%;
+      margin: 10px 0;
+    }
+    @media @small {
+      .center;
+      display: block;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }//item
+
+  &__more {  
+    .center;
+    max-width: 720px;
+    font-size: 26px;    
+    &-phone {
+      color: @green;
+      font-weight: bold;
+    }
+  }
+
+  &__scroll {
+    display: block;
+    margin-top: 50px;
+  }
+
+}

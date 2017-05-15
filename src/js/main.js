@@ -84,7 +84,7 @@
         }
     }
 });
-
+//слайдер
   $(window).load(function(){
     $(".feedback__row").slick({
       slidesToShow: 2,

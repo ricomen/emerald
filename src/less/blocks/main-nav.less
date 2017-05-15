@@ -8,6 +8,23 @@
   @media @phone {
     margin-right: 5px;
   }
+  &--fixed {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 20;
+    .main-nav__toggle {
+      font-size: 0;
+      padding-left: 0;
+      &::after {
+        background: @green;        
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+      }
+      &::before {
+        z-index: 5;
+      }
+    }
+  }
 
   &__toggle {
     position: relative;

@@ -76,11 +76,11 @@ gulp.task('less', function() {
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sourcemaps.init())
     .pipe(less())
+    .pipe(csscomb())
     .pipe(postcss(postCssPlugins))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('src/css'))
 });
-    // .pipe(csscomb())
 
 //PNG-спрайт(кидает в корень img + css в less/blocks)
 gulp.task('sprite', function () {

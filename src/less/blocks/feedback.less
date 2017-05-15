@@ -59,6 +59,12 @@
     float: left;
     width: 35%;
     text-align: center;    
+    @media @small {      
+      float: none;      
+      width: 100%;
+      margin-bottom: 10px;
+
+    }
     
     p {
       margin: 0;
@@ -76,13 +82,21 @@
     max-width: 140px;    
     border-radius: 50%;
     overflow: hidden;
+    @media @small {
+      display: block;
+      .center;
+    }
   }
 
   &__text {
     margin: 0;
-    float: right;
+    float: right;    
     font-size: 15px;
     width: 63%;    
+    @media @small {
+      float: none;
+      width: 100%;
+    }
   }
 
 }

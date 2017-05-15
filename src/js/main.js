@@ -90,10 +90,17 @@
       slidesToShow: 2,
       slidesToScroll: 2,
       dots: true,
-      responsive: [    
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false
+          }
+        },
         {
           breakpoint: 768,
           settings: {
+            arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1
           }

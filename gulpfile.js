@@ -64,18 +64,23 @@ gulp.task('pug', function() {
 //LESS-препроцессор
 let postCssPlugins = [
   autoprefixer({browsers: ['last 2 version']}),
-  mqpacker({sort: true}),  
+  mqpacker({
+    sort: function (a, b) {
+      return b.localeCompare(a);
+    }
+  })
 ];
+
 gulp.task('less', function() {
   gulp.src('src/less/style.less')
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(postcss(postCssPlugins))
-    .pipe(csscomb())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('src/css'))
 });
+    // .pipe(csscomb())
 
 //PNG-спрайт(кидает в корень img + css в less/blocks)
 gulp.task('sprite', function () {

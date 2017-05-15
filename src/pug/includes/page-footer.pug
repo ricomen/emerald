@@ -23,3 +23,23 @@ footer.page-footer#contacts
         +icon("youtube", 50)
   .page-footer__copyright &copy; 2017 Все права защищены&nbsp;
     a(href="#") Политика конфиденциальности
+.modal#modal
+  .modal-content
+    button(type="button").modal-close
+    .secrets__form
+      form.form-secrets
+        legeng.form-secrets__text Консультация свадебного специалиста с опыттом организации 
+          b более 200 свадеб!
+        .form-secrets__input-wrap
+          i.form-secrets__icon &#xe802;
+          input(type="text" name="name" placeholder="Ваше имя")
+        .form-secrets__input-wrap
+          i.form-secrets__icon &#xe801;
+          input(type="tel" name="phone" placeholder="Номер телефона")
+        input(type="submit" value="Получить консультацию")
+      .form-secrets__success.form-secrets__success-show
+        img(src="img/byke.jpg", alt="")
+        p 
+          b Ваша заявка принята
+        p В ближайшее время мы с Вами свяжемся.
+

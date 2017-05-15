@@ -32,7 +32,7 @@
             </div>
           </div><a class="logo logo--header" href="/"><img src="img/logo.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" width="140" alt="Emerald"></a>
           <div class="page-header__right">     
-            <div class="page-header__callback"><a class="btn btn--callback" href="#">Заказать звонок</a></div>
+            <div class="page-header__callback"><a class="btn btn--callback" href="#modal">Заказать звонок</a></div>
             <div class="page-header__phones">       
               <div class="page-header__phones-wrap"><a href="tel:+74951955722">+7 (495) 195-57-22</a><a href="tel:+79853941057">+7 (495) 394-10-57</a></div>
             </div>
@@ -160,7 +160,7 @@
                 <li>– Отвечает на все волнующие вопросы</li>
               </ul>
             </div>
-            <div class="price__item-bottom"><span class="price__item-cost">17 000 &#8381;</span></div>
+            <div class="price__item-bottom"><span class="price__item-cost">17 000 <i class="price__item-symbol">&#xf158;</i></span></div>
           </div>
           <div class="price__item">
             <h3 class="price__item-title">Организация<br>свадьбы</h3>
@@ -171,23 +171,23 @@
                 <li>–В день свадьбы на площадке работают: <i>свадебный распорядитель + координатор. </i></li>
               </ul><span>Вы отдыхаете! </span>
             </div>
-            <div class="price__item-bottom"><span class="price__item-cost">37 000 &#8381;</span></div>
+            <div class="price__item-bottom"><span class="price__item-cost">37 000 <i class="price__item-symbol">&#xf158;</i></span></div>
           </div>
           <div class="price__item">
             <h3 class="price__item-title">PREMIUM<br>Организация свадьбы</h3>
             <div class="price__item-body">
-              <p class="price__item-text">ВаЭто предложение идеально подходит для свадебных торжеств, если приглашённых гостей будет <b>100 и более человек.</b></p>
+              <p class="price__item-text">Это предложение идеально подходит для свадебных торжеств, если приглашённых гостей будет <b>100 и более человек.</b></p>
               <ul class="price__item-list">
                 <li>– Если в расписании свадебного дня запланирована насыщенная программа с развлечениями и артистами. </li>
                 <li>– С утра ВАС будет сопровождать координатор, который возьмет на себя хлопоты первой половины дня. </li>
                 <li>–В день свадьбы на площадке работают: <i>свадебный распорядитель+2 координатора.            </i></li>
               </ul>
             </div>
-            <div class="price__item-bottom"><span class="price__item-cost">57 000 &#8381;</span></div>
+            <div class="price__item-bottom"><span class="price__item-cost">57 000 <i class="price__item-symbol">&#xf158;</i></span></div>
           </div>
         </div>
         <div class="price__bottom">
-          <div class="price__consult">Подробная консультация по телефону: <a class="price__phone" href="tel:+74951955722">+7 (495) 195-57-22 </a>или оставьте заявку:</div><a class="btn btn--callback btn--big" href="/">Оставить заявку</a>
+          <div class="price__consult">Подробная консультация по телефону: <a class="price__phone" href="tel:+74951955722">+7 (495) 195-57-22 </a>или оставьте заявку:</div><a class="btn btn--callback btn--big" href="#modal">Оставить заявку</a>
         </div>
       </div>
     </section>
@@ -439,6 +439,27 @@
       </div>
       <div class="page-footer__copyright">&copy; 2017 Все права защищены&nbsp;<a href="#">Политика конфиденциальности</a></div>
     </footer>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="modal-close" type="button"></button>
+        <div class="secrets__form">
+          <form class="form-secrets">
+            <legeng class="form-secrets__text">Консультация свадебного специалиста с опыттом организации <b>более 200 свадеб!</b></legeng>
+            <div class="form-secrets__input-wrap"><i class="form-secrets__icon">&#xe802;</i>
+              <input type="text" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form-secrets__input-wrap"><i class="form-secrets__icon">&#xe801;</i>
+              <input type="tel" name="phone" placeholder="Номер телефона">
+            </div>
+            <input type="submit" value="Получить консультацию">
+          </form>
+          <div class="form-secrets__success form-secrets__success-show"><img src="img/byke.jpg" alt="">
+            <p> <b>Ваша заявка принята</b></p>
+            <p>В ближайшее время мы с Вами свяжемся.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/libs/jquery-2.2.4.min.js"></script>
     <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
     <script src="js/slick.min.js"></script>

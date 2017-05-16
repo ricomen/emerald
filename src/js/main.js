@@ -63,7 +63,7 @@
     });
 
     //.mPageScroll2id - плавная прокрутка по ссылкам
-    $("a[rel='m_PageScroll2id']").mPageScroll2id();   
+    $("a[rel='m_PageScroll2id']").mPageScroll2id();
 
     //кнопка навигации при прокрутке
     var fixNav = false;
@@ -76,6 +76,13 @@
         $(".main-nav").removeClass("main-nav--fixed");
       }      
     });
+
+    //обработка формы    
+    $("form").on("submit", function(e) {
+      e.preventDefault();
+      console.log($(this).serialize());
+    //валидация и отправка
+    })
 
 })();
 

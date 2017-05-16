@@ -6,6 +6,39 @@
     $(this).siblings('.main-nav__list').toggleClass("main-nav__list--show");
   });
 
+  //модальные окна заказать звонок
+  $("a[href='#modal']").on("click", function(e){
+    e.preventDefault();
+    $("#modal").show();
+    $("body").css({
+      "overflow-y": "hidden"
+    });
+  });
+  $(".modal-close").on("click", function(){
+    $("#modal").hide();
+    $("body").css({
+      "overflow-y": "auto"
+    });
+  });
+
+  //выравнивание блоков по высоте
+  function autoHeight() {
+    var maxHeight = 0;
+    $(".price__item").each(function() {
+      $(".price__item").attr("style", "");
+      if($(this).outerHeight() > maxHeight) {
+        maxHeight = $(this).height();
+      }
+    });
+    $(".price__item").height(maxHeight);   
+  }; 
+
+  autoHeight();
+
+  $(window).resize(function(){
+    autoHeight();  
+  });
+
   //slider
   $(".feedback__row").slick({
       slidesToShow: 2,
@@ -30,7 +63,7 @@
     });
 
     //.mPageScroll2id - плавная прокрутка по ссылкам
-    $("a[rel='m_PageScroll2id']").mPageScroll2id();   
+    $("a[rel='m_PageScroll2id']").mPageScroll2id();
 
     //кнопка навигации при прокрутке
     var fixNav = false;
@@ -43,6 +76,13 @@
         $(".main-nav").removeClass("main-nav--fixed");
       }      
     });
+
+    //обработка формы    
+    $("form").on("submit", function(e) {
+      e.preventDefault();
+      console.log($(this).serialize());
+    //валидация и отправка
+    })
 
 })();
 
